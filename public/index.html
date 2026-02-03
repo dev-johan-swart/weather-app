@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Weather App</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="app">
+  <div class="app-header">
+    <h1 class="title">🌤️ Weather App</h1>
+    <div class="search">
+      <form id="search-form">
+        <input id="city-input" type="text" placeholder="Enter city..." />
+        <button type="submit">Search</button>
+      </form>
+      <button id="loc-btn">Use My Location</button>
+    </div>
+  </div>
+
+  <div class="weather-card">
+    <div class="meta">
+      <h2 class="location" id="location">--</h2>
+      <p class="time" id="time">--</p>
+    </div>
+
+    <div class="main-row">
+      <div class="temp-block">
+        <img class="icon" id="icon" src="" alt="Weather icon" />
+        <p class="temp" id="temperature">--°C</p>
+      </div>
+      <p class="conditions" id="conditions">--</p>
+    </div>
+
+    <div class="details">
+      <p>Feels like: <span id="feels">--°C</span></p>
+      <p>Humidity: <span id="humidity">--%</span></p>
+      <p>Wind: <span id="wind">-- m/s</span></p>
+    </div>
+
+    <p class="status" id="status">Ready. Use "Use My Location" or search a city.</p>
+
+    <div class="actions">
+      <a id="source-link" href="#" target="_blank">View on OpenWeather</a>
+    </div>
+  </div>
+
+  <div id="forecast" class="forecast"></div>
+</div>
+
+<script src="script.js"></script>
+<footer class="credit">
+  <a href="https://github.com/johan-swart" target="_blank">Created by Dev Johan Swart</a>
+</footer>
+</body>
+</html>
+
+
+

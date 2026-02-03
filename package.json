@@ -1,0 +1,27 @@
+{
+    "homepage": "./",
+    "name": "weather-app",
+    "version": "1.0.0",
+    "private": true,
+    "description": "Weather app (static frontend) served by a small Express proxy to protect API key",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "dev": "nodemon server.js"
+    },
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^16.6.1",
+        "express": "^4.21.2",
+        "express-rate-limit": "^6.8.0",
+        "helmet": "^7.0.0",
+        "node-fetch": "^2.6.7",
+        "react-scripts": "^5.0.1"
+    },
+    "devDependencies": {
+        "nodemon": "^3.0.1"
+    },
+    "keywords": []
+}
